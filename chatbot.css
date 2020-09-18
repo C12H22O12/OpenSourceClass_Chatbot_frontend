@@ -1,0 +1,80 @@
+*{
+    border:solid black;
+}
+
+.App{
+    margin: 0 auto;
+    width : 70%;
+    height: 100%;
+    font-size : 0;
+    /*display : inline-block을 통해 생긴 공백을 없애기 위함*/
+}
+
+.Chat, .functionBar{
+    display : inline-block;
+    /*display : inline은 width, height가 안먹는데 
+    내가 먼저 요 속성을 줘서 안먹던 거다 먹으려면 display : inline-block으로 줘야 함*/
+}
+
+input{
+    vertical-align: middle;
+    margin-top : 1%;
+    margin-right: 2%;
+}
+
+input.formText{
+    border-radius: 30px;
+    border : 1px solid #bcbcbc;
+    margin-left : 5%;
+    padding-left: 2%;
+    width : 75%;
+    height : 35px;
+}
+
+input.callCamera, input.sendIcon{
+    width : 35px;
+    height : 35px;
+    cursor : pointer;
+}
+
+input.sendIcon{
+    background-image : url("./asset/send.png") no-repeat;
+}
+
+input.etcIcon{
+    background-image: url("./asset/plus.png") no-repeat;
+}
+
+.Chat{
+    width : 70%;
+}
+
+ul, h2{
+    width: 100%;
+    margin : 0;
+}
+
+ul{
+    list-style: none;   
+    padding: 0; 
+}
+
+h2{
+    font-size : 30px;
+}
+
+.functionBar{
+    width : 28%;
+    vertical-align: top;
+    font-size : 15px;
+}
+
+#menuBar{
+    height: 50px;
+    vertical-align: middle;
+}
+
+
+#chatWindow{
+    height: 500px;
+}
